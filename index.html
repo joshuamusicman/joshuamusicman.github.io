@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Always Mobile | Global Satellite Connectivity</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@800;900&display=swap" rel="stylesheet">
+
+  <style>
+    .font-brand {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased selection:bg-amber-500 selection:text-stone-950 relative min-h-screen">
+
+  <!-- Background Forest Image with Sun Rays -->
+  <div class="fixed inset-0 z-0">
+    <img 
+      src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2000&q=80" 
+      alt="Deep forest with sunlight breaking through trees" 
+      class="w-full h-full object-cover object-center"
+    />
+    <!-- Dark Forest Overlay for Text Contrast -->
+    <div class="absolute inset-0 bg-gradient-to-b from-stone-950/85 via-emerald-950/75 to-stone-950/95 backdrop-brightness-75"></div>
+  </div>
+
+  <!-- Main Wrapper -->
+  <div class="relative z-10 min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navigation -->
+    <header class="container mx-auto px-6 py-6 flex justify-between items-center">
+      
+      <!-- Distinct "ALWAYS MOBILE" Logo Styling -->
+      <button onclick="showView('hero')" class="group flex items-center gap-3 hover:opacity-95 transition-all text-left focus:outline-none">
+        <span class="text-xl bg-amber-500/20 border border-amber-500/40 p-2 rounded-xl group-hover:scale-105 transition-transform shadow-lg shadow-amber-500/10">🌲</span>
+        <div class="flex flex-col">
+          <span class="font-brand text-xl md:text-2xl font-black tracking-[0.2em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-100 to-emerald-300 drop-shadow-sm">
+            ALWAYS<span class="text-amber-400 font-light ml-2">MOBILE</span>
+          </span>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-emerald-400/80 font-semibold -mt-1">Satellite Network</span>
+        </div>
+      </button>
+
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-200">
+        <button onclick="showView('what-we-do')" class="hover:text-amber-400 transition-colors focus:outline-none">What We Do</button>
+        <button onclick="showView('ease-of-use')" class="hover:text-amber-400 transition-colors focus:outline-none">Ease of Use</button>
+        <button onclick="showView('why-choose-us')" class="hover:text-amber-400 transition-colors focus:outline-none">Why Choose Us</button>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#get-started" class="bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-5 py-2.5 rounded-lg transition-all transform active:scale-95 shadow-lg shadow-amber-500/20">Get Started</a>
+      </div>
+    </header>
+
+    <!-- ================= VIEW 1: HERO / HOME ================= -->
+    <main id="view-hero" class="container mx-auto px-6 py-10 md:py-16 text-center max-w-4xl transition-all duration-300">
+      
+      <!-- Classy Editorial Primary Headline -->
+      <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-4 text-stone-100 drop-shadow-md">
+        The Future of Coverage <span class="italic font-normal text-amber-200/90">is Now</span>
+      </h1>
+
+      <!-- Elegant Sub-Pill Badge -->
+      <div class="mb-8">
+        <span class="inline-block bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 font-medium text-xs md:text-sm uppercase tracking-widest px-4 py-1.5 rounded-full backdrop-blur-md">
+          Always Connected Satellite Coverage
+        </span>
+      </div>
+      
+      <!-- Secondary Heading -->
+      <h2 class="text-2xl md:text-4xl font-semibold mb-6 leading-relaxed tracking-normal text-stone-200">
+        Zero Dead Zones. <span class="text-emerald-300/90 font-light">Pure Wilderness Freedom.</span>
+      </h2>
+      
+      <p class="text-base md:text-lg text-stone-300/90 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow">
+        Direct-to-cell satellite coverage for calls, text, and data wherever your trail, expedition, or mission takes you. No cell towers required.
+      </p>
+      
+      <!-- Interactive Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <button onclick="showView('what-we-do')" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-6 py-3.5 rounded-lg transition-all shadow-lg shadow-amber-500/20 text-center transform active:scale-95 focus:outline-none">
+          What We Do
+        </button>
+        <button onclick="showView('ease-of-use')" class="w-full sm:w-auto bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/40 text-emerald-100 hover:text-amber-300 font-semibold px-6 py-3.5 rounded-lg transition-all backdrop-blur-md text-center transform active:scale-95 focus:outline-none">
+          Ease of Use
+        </button>
+        <button onclick="showView('why-choose-us')" class="w-full sm:w-auto bg-stone-900/90 hover:bg-stone-800 border-2 border-amber-500/60 hover:border-amber-400 text-stone-100 hover:text-amber-300 font-semibold px-6 py-3.5 rounded-lg transition-all backdrop-blur-md shadow-lg text-center transform active:scale-95 focus:outline-none">
+          Why Choose Us
+        </button>
+      </div>
+    </main>
+
+    <!-- ================= VIEW 2: WHAT WE DO ================= -->
+    <main id="view-what-we-do" class="hidden container mx-auto px-6 py-12 max-w-3xl transition-all duration-300">
+      <button onclick="showView('hero')" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-8 font-medium transition focus:outline-none">
+        ← Back to Overview
+      </button>
+
+      <div class="bg-emerald-950/50 border border-emerald-500/30 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+        <span class="text-amber-400 text-3xl mb-4 block">📡</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-4">The Future of Mobile Coverage</h2>
+        <p class="text-emerald-300 font-medium mb-6">Why direct-to-cell satellite service is revolutionizing communication everywhere on Earth.</p>
+        
+        <div class="space-y-4 text-stone-300 leading-relaxed">
+          <p>
+            Traditional mobile networks rely on terrestrial towers that only cover about 15% of the Earth's surface. Satellite cell service bridges the gap by beaming low-Earth orbit connectivity straight to standard cellular devices.
+          </p>
+          <p>
+            By linking directly with modern smartphones, satellite connectivity eliminates dead zones across oceans, remote mountain ranges, and rural farmlands. For society, this means continuous safety routing, instant disaster response communication, and total digital freedom for adventurers and outdoor professionals alike.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= VIEW 3: EASE OF USE ================= -->
+    <main id="view-ease-of-use" class="hidden container mx-auto px-6 py-12 max-w-3xl transition-all duration-300">
+      <button onclick="showView('hero')" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-8 font-medium transition focus:outline-none">
+        ← Back to Overview
+      </button>
+
+      <div class="bg-emerald-950/50 border border-emerald-500/30 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+        <span class="text-amber-400 text-3xl mb-4 block">🔄</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-4">Keep Your Existing Plan</h2>
+        <p class="text-emerald-300 font-medium mb-6">Seamless integration with no new contracts or long-term commitments required.</p>
+        
+        <div class="space-y-4 text-stone-300 leading-relaxed">
+          <p>
+            Getting off-grid coverage shouldn't mean switching carriers or signing multi-year contracts. We have partnered directly with major mobile carriers around the globe to integrate Always Mobile at the network level.
+          </p>
+          <p>
+            Everything transfers over seamlessly. Your phone number, account settings, and regular billing stay identical. Simply toggle on Always Mobile satellite roaming when you step off the grid and enjoy automatic protection wherever your trail takes you.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= VIEW 4: WHY CHOOSE US ================= -->
+    <main id="view-why-choose-us" class="hidden container mx-auto px-6 py-12 max-w-3xl transition-all duration-300">
+      <button onclick="showView('hero')" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-8 font-medium transition focus:outline-none">
+        ← Back to Overview
+      </button>
+
+      <div class="bg-emerald-950/50 border border-amber-500/40 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+        <span class="text-amber-400 text-3xl mb-4 block">⚡</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-4">Next-Gen Speed for $10/Month</h2>
+        <p class="text-amber-300 font-medium mb-6">Affordable, high-speed peace of mind anywhere on planet Earth.</p>
+        
+        <div class="space-y-4 text-stone-300 leading-relaxed">
+          <p>
+            For a small add-on fee of just <strong>$10 a month</strong>, you unlock full access to the future of global coverage. Never again worry about dropped navigation maps, lost messages, or frustratingly slow wilderness data speeds.
+          </p>
+          <p>
+            Whether you're backpacking deep in the backcountry or traveling through rural corridors, Always Mobile keeps your speed high and your connection active—giving you complete peace of mind without breaking the bank.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 py-8 text-center text-xs text-stone-400 border-t border-emerald-900/40">
+      <p>© Always Mobile. Global Satellite Connectivity for the Wilderness.</p>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript to Handle View Swapping -->
+  <script>
+    function showView(viewName) {
+      const views = ['hero', 'what-we-do', 'ease-of-use', 'why-choose-us'];
+      
+      views.forEach(function(v) {
+        const el = document.getElementById('view-' + v);
+        if (el) el.classList.add('hidden');
+      });
+
+      const targetView = document.getElementById('view-' + viewName);
+      if (targetView) {
+        targetView.classList.remove('hidden');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
