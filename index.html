@@ -170,8 +170,27 @@
 
   </div>
 
-  <!-- JavaScript to Handle View Swapping -->
+  <!-- Ambient Background Audio Player -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <audio id="bg-music" loop preload="auto">
+      <source src="jingle.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <button 
+      id="music-toggle" 
+      onclick="toggleMusic()" 
+      class="flex items-center gap-2 bg-stone-900/90 hover:bg-stone-800 border border-amber-500/40 text-stone-200 px-4 py-2.5 rounded-full backdrop-blur-md shadow-xl transition-all duration-300 text-xs font-semibold focus:outline-none group hover:scale-105"
+      aria-label="Toggle ambient music"
+    >
+      <span id="music-icon" class="text-amber-400 text-base transition-transform group-hover:rotate-12">🎵</span>
+      <span id="music-text" class="text-stone-300">Play Jingle</span>
+    </button>
+  </div>
+
+  <!-- JavaScript Controls -->
   <script>
+    // View Swapping Function
     function showView(viewName) {
       const views = ['hero', 'what-we-do', 'ease-of-use', 'why-choose-us'];
       
@@ -186,6 +205,25 @@
       }
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Music Player Function
+    function toggleMusic() {
+      const audio = document.getElementById('bg-music');
+      const icon = document.getElementById('music-icon');
+      const text = document.getElementById('music-text');
+
+      if (audio.paused) {
+        audio.play();
+        icon.textContent = '🔊';
+        text.textContent = 'Pause Jingle';
+        text.classList.add('text-amber-300');
+      } else {
+        audio.pause();
+        icon.textContent = '🎵';
+        text.textContent = 'Play Jingle';
+        text.classList.remove('text-amber-300');
+      }
     }
   </script>
 
