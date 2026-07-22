@@ -105,17 +105,22 @@
 
       <div class="bg-emerald-950/50 border border-emerald-500/30 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
         <span class="text-amber-400 text-3xl mb-4 block">📡</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-4">The Future of Mobile Coverage</h2>
-        <p class="text-emerald-300 font-medium mb-6">Why direct-to-cell satellite service is revolutionizing communication everywhere on Earth.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-6">We bring the future of mobile coverage to your device</h2>
         
-        <div class="space-y-4 text-stone-300 leading-relaxed">
-          <p>
-            Traditional mobile networks rely on terrestrial towers that only cover about 15% of the Earth's surface. Satellite cell service bridges the gap by beaming low-Earth orbit connectivity straight to standard cellular devices.
-          </p>
-          <p>
-            By linking directly with modern smartphones, satellite connectivity eliminates dead zones across oceans, remote mountain ranges, and rural farmlands. For society, this means continuous safety routing, instant disaster response communication, and total digital freedom for adventurers and outdoor professionals alike.
-          </p>
-        </div>
+        <ul class="space-y-4 text-stone-300 leading-relaxed">
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
+            <span>You are signing up for direct-to-satellite connectivity for your own personal device</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
+            <span>We have launched dozens of broadband-capable satellites into space providing your device with up to 150 Mbps data accessible from anywhere in the world using 4G and 5G direct-to-cell connections</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
+            <span>No longer is the need for ground cell towers that are prone short range and spotty areas of coverage with our satellites everywhere is a perfect connection</span>
+          </li>
+        </ul>
       </div>
     </main>
 
@@ -149,17 +154,43 @@
 
       <div class="bg-emerald-950/50 border border-amber-500/40 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
         <span class="text-amber-400 text-3xl mb-4 block">⚡</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-4">Next-Gen Speed for $10/Month</h2>
-        <p class="text-amber-300 font-medium mb-6">Affordable, high-speed peace of mind anywhere on planet Earth.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-6">Why Choose Us</h2>
         
-        <div class="space-y-4 text-stone-300 leading-relaxed">
-          <p>
-            For a small add-on fee of just <strong>$10 a month</strong>, you unlock full access to the future of global coverage. Never again worry about dropped navigation maps, lost messages, or frustratingly slow wilderness data speeds.
-          </p>
-          <p>
-            Whether you're backpacking deep in the backcountry or traveling through rural corridors, Always Mobile keeps your speed high and your connection active—giving you complete peace of mind without breaking the bank.
-          </p>
+        <ul class="space-y-4 text-stone-300 leading-relaxed mb-8">
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
+            <span>Never lose your bar. Connect anywhere on Earth—using the phone already in your pocket.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
+            <span>This CTA is designed to convert high-intent travelers while overcoming the major friction points inherent to satellite service adoption.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
+            <span>A barrier that’s overcome with this service is no need to buy a new phone , no expensive hardware . there is no risk and it works in anyone’s coverage area</span>
+          </li>
+        </ul>
+
+        <!-- Claim Trial CTA Button -->
+        <div class="pt-4 border-t border-emerald-900/40">
+          <button onclick="showView('congrats')" class="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-6 py-4 rounded-xl transition-all shadow-xl shadow-amber-500/20 text-center transform active:scale-95 focus:outline-none">
+            Claim Your 14-Day Global Coverage Trial
+          </button>
         </div>
+      </div>
+    </main>
+
+    <!-- ================= VIEW 5: CONGRATS ================= -->
+    <main id="view-congrats" class="hidden container mx-auto px-6 py-12 max-w-3xl text-center transition-all duration-300">
+      <button onclick="showView('why-choose-us')" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-8 font-medium transition focus:outline-none">
+        ← Back
+      </button>
+
+      <div class="bg-emerald-950/60 border-2 border-amber-500/60 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-2xl">
+        <span class="text-5xl mb-6 block animate-bounce">🎉</span>
+        <h2 class="text-4xl md:text-6xl font-black text-stone-100 tracking-tight">
+          Congrats, U R SO SMART
+        </h2>
       </div>
     </main>
 
@@ -192,7 +223,7 @@
   <script>
     // View Swapping Function
     function showView(viewName) {
-      const views = ['hero', 'what-we-do', 'ease-of-use', 'why-choose-us'];
+      const views = ['hero', 'what-we-do', 'ease-of-use', 'why-choose-us', 'congrats'];
       
       views.forEach(function(v) {
         const el = document.getElementById('view-' + v);
