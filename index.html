@@ -55,7 +55,7 @@
         <button onclick="showView('why-choose-us')" class="hover:text-amber-400 transition-colors focus:outline-none">Why Choose Us</button>
       </nav>
       <div class="flex items-center space-x-4">
-        <a href="#get-started" class="bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-5 py-2.5 rounded-lg transition-all transform active:scale-95 shadow-lg shadow-amber-500/20">Get Started</a>
+        <button onclick="showView('get-started')" class="bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-5 py-2.5 rounded-lg transition-all transform active:scale-95 shadow-lg shadow-amber-500/20 focus:outline-none">Get Started</button>
       </div>
     </header>
 
@@ -194,6 +194,20 @@
       </div>
     </main>
 
+    <!-- ================= VIEW 6: GET STARTED ================= -->
+    <main id="view-get-started" class="hidden container mx-auto px-6 py-12 max-w-3xl text-center transition-all duration-300">
+      <button onclick="showView('hero')" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-8 font-medium transition focus:outline-none">
+        ← Back to Overview
+      </button>
+
+      <div class="bg-emerald-950/60 border-2 border-amber-500/60 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-2xl">
+        <span class="text-5xl mb-6 block animate-pulse">💪</span>
+        <h2 class="text-4xl md:text-6xl font-black text-stone-100 tracking-tight">
+          Now Do 10 Push Ups
+        </h2>
+      </div>
+    </main>
+
     <!-- Footer -->
     <footer class="container mx-auto px-6 py-8 text-center text-xs text-stone-400 border-t border-emerald-900/40">
       <p>© Always Mobile. Global Satellite Connectivity for the Wilderness.</p>
@@ -223,7 +237,7 @@
   <script>
     // View Swapping Function
     function showView(viewName) {
-      const views = ['hero', 'what-we-do', 'ease-of-use', 'why-choose-us', 'congrats'];
+      const views = ['hero', 'what-we-do', 'ease-of-use', 'why-choose-us', 'congrats', 'get-started'];
       
       views.forEach(function(v) {
         const el = document.getElementById('view-' + v);
