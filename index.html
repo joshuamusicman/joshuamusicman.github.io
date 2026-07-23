@@ -60,8 +60,28 @@
     </header>
 
     <!-- ================= VIEW 1: HERO / HOME ================= -->
-    <main id="view-hero" class="container mx-auto px-6 py-10 md:py-16 text-center max-w-4xl transition-all duration-300">
+    <main id="view-hero" class="container mx-auto px-6 py-8 md:py-12 text-center max-w-4xl transition-all duration-300">
       
+      <!-- HERO PHOTO CARD (OPTION 1) -->
+      <div class="mb-10 max-w-2xl mx-auto group">
+        <div class="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl shadow-emerald-950/50 backdrop-blur-md">
+          <img 
+            src="hero-photo.jpg" 
+            alt="Always Mobile Satellite Coverage" 
+            class="w-full h-64 md:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- LEARN MORE BUTTON BELOW PHOTO -->
+        <div class="mt-4">
+          <button onclick="showView('what-we-do')" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-6 py-3 rounded-full transition-all shadow-lg shadow-amber-500/20 transform active:scale-95 focus:outline-none">
+            Learn More
+            <span class="text-lg">↓</span>
+          </button>
+        </div>
+      </div>
+
       <!-- Classy Editorial Primary Headline -->
       <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-4 text-stone-100 drop-shadow-md">
         The Future of Coverage <span class="italic font-normal text-amber-200/90">is Now</span>
@@ -110,15 +130,15 @@
         <ul class="space-y-4 text-stone-300 leading-relaxed">
           <li class="flex items-start gap-3">
             <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
-            <span>You are signing up for direct-to-satellite connectivity for your own personal device</span>
+            <span>You are signing up for direct-to-satellite connectivity for your own personal device.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
-            <span>We have launched dozens of broadband-capable satellites into space providing your device with up to 150 Mbps data accessible from anywhere in the world using 4G and 5G direct-to-cell connections</span>
+            <span>We have launched dozens of broadband-capable satellites into space, providing your device with up to 150 Mbps data accessible from anywhere in the world using 4G and 5G direct-to-cell connections.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
-            <span>No longer is the need for ground cell towers that are prone short range and spotty areas of coverage with our satellites everywhere is a perfect connection</span>
+            <span>No longer is there a need for ground cell towers that are prone to short range and spotty coverage—with our satellites, everywhere is a perfect connection.</span>
           </li>
         </ul>
       </div>
@@ -132,15 +152,17 @@
 
       <div class="bg-emerald-950/50 border border-emerald-500/30 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
         <span class="text-amber-400 text-3xl mb-4 block">🔄</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-4">Keep Your Existing Plan</h2>
-        <p class="text-emerald-300 font-medium mb-6">Seamless integration with no new contracts or long-term commitments required.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-stone-100 mb-6">Keep Your Existing Plan</h2>
         
         <div class="space-y-4 text-stone-300 leading-relaxed">
           <p>
-            Getting off-grid coverage shouldn't mean switching carriers or signing multi-year contracts. We have partnered directly with major mobile carriers around the globe to integrate Always Mobile at the network level.
+            Always Mobile offers fast and reliable internet. Its primary benefit is providing high-speed connectivity in areas where traditional broadband providers cannot, including rural areas, remote locations, and areas affected by natural disasters. Always Mobile allows standard LTE smartphones to connect directly to satellites in low-Earth orbit, eliminating dead zones and acting as a space-based cell tower.
           </p>
           <p>
-            Everything transfers over seamlessly. Your phone number, account settings, and regular billing stay identical. Simply toggle on Always Mobile satellite roaming when you step off the grid and enjoy automatic protection wherever your trail takes you.
+            A key aspect of Always Mobile is connectivity and convenience. Consumers can go anywhere while staying connected, giving them the flexibility to work, travel, and communicate without relying on traditional infrastructure. We offer consumers the option to choose, while other companies require year-long plans and agreements.
+          </p>
+          <p>
+            Traditional providers rely on extensive physical infrastructure that can be damaged by storms, fallen trees, or construction accidents, causing service outages. By solving connectivity challenges for everyday consumers, Always Mobile provides fast, reliable internet anywhere they go.
           </p>
         </div>
       </div>
@@ -163,11 +185,11 @@
           </li>
           <li class="flex items-start gap-3">
             <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
-            <span>This CTA is designed to convert high-intent travelers while overcoming the major friction points inherent to satellite service adoption.</span>
+            <span>Designed to keep high-intent travelers connected everywhere, overcoming common satellite service limits.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-emerald-400 font-bold text-lg leading-none mt-1">•</span>
-            <span>A barrier that’s overcome with this service is no need to buy a new phone , no expensive hardware . there is no risk and it works in anyone’s coverage area</span>
+            <span>No need to buy a new phone or expensive hardware; there is no risk, and it works seamlessly in your coverage area.</span>
           </li>
         </ul>
 
@@ -189,7 +211,7 @@
       <div class="bg-emerald-950/60 border-2 border-amber-500/60 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-2xl">
         <span class="text-5xl mb-6 block animate-bounce">🎉</span>
         <h2 class="text-4xl md:text-6xl font-black text-stone-100 tracking-tight">
-          Congrats, U R SO SMART
+          Congrats, U R SO SMART!
         </h2>
       </div>
     </main>
@@ -203,7 +225,7 @@
       <div class="bg-emerald-950/60 border-2 border-amber-500/60 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-2xl">
         <span class="text-5xl mb-6 block animate-pulse">💪</span>
         <h2 class="text-4xl md:text-6xl font-black text-stone-100 tracking-tight">
-          Now Do 10 Push Ups
+          Now Do 10 Push-Ups!
         </h2>
       </div>
     </main>
