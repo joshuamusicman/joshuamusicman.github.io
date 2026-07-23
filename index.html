@@ -62,12 +62,12 @@
     <!-- ================= VIEW 1: HERO / HOME ================= -->
     <main id="view-hero" class="container mx-auto px-6 py-8 md:py-12 text-center max-w-4xl transition-all duration-300">
       
-      <!-- HERO PHOTO (UNCROPPED & FULLY VISIBLE) -->
+      <!-- HERO PHOTO (ZERO CROPPING / NATIVE DIMENSIONS) -->
       <div class="mb-10 w-full flex justify-center">
         <img 
           src="hero-photo.jpg" 
           alt="Always Mobile Satellite Coverage" 
-          class="w-full h-auto max-w-3xl rounded-2xl border border-emerald-500/30 shadow-2xl shadow-emerald-950/50 object-contain"
+          style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 1rem; border: 1px solid rgba(16, 185, 129, 0.3); box-shadow: 0 20px 25px -5px rgba(6, 78, 59, 0.5);"
         />
       </div>
 
