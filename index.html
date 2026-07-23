@@ -28,8 +28,8 @@
       alt="Deep forest with sunlight breaking through trees" 
       class="w-full h-full object-cover object-center"
     />
-    <!-- Dark Slate/Blue Overlay matching the Graphic Tones -->
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/80 to-slate-950/95 backdrop-brightness-75"></div>
+    <!-- Lightened Dark Slate/Blue Overlay to let the background show through better -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/75 via-slate-900/65 to-slate-950/85 backdrop-brightness-90"></div>
   </div>
 
   <!-- Main Wrapper -->
@@ -78,7 +78,7 @@
 
       <!-- Elegant Sub-Pill Badge -->
       <div class="mb-8">
-        <span class="inline-block bg-slate-900/80 border border-sky-500/30 text-sky-300 font-medium text-xs md:text-sm uppercase tracking-widest px-4 py-1.5 rounded-full backdrop-blur-md shadow-lg">
+        <span class="inline-block bg-slate-900/70 border border-sky-500/30 text-sky-300 font-medium text-xs md:text-sm uppercase tracking-widest px-4 py-1.5 rounded-full backdrop-blur-sm shadow-lg">
           Always Connected Satellite Coverage
         </span>
       </div>
@@ -97,10 +97,10 @@
         <button onclick="showView('what-we-do')" class="w-full sm:w-auto bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-6 py-3.5 rounded-lg transition-all shadow-lg shadow-sky-500/20 text-center transform active:scale-95 focus:outline-none">
           What We Do
         </button>
-        <button onclick="showView('ease-of-use')" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 border border-sky-500/40 text-slate-100 hover:text-sky-300 font-semibold px-6 py-3.5 rounded-lg transition-all backdrop-blur-md text-center transform active:scale-95 focus:outline-none">
+        <button onclick="showView('ease-of-use')" class="w-full sm:w-auto bg-slate-900/70 hover:bg-slate-800 border border-sky-500/40 text-slate-100 hover:text-sky-300 font-semibold px-6 py-3.5 rounded-lg transition-all backdrop-blur-sm text-center transform active:scale-95 focus:outline-none">
           Ease of Use
         </button>
-        <button onclick="showView('why-choose-us')" class="w-full sm:w-auto bg-slate-900/90 hover:bg-slate-800 border-2 border-sky-400/60 hover:border-sky-300 text-slate-100 hover:text-sky-300 font-semibold px-6 py-3.5 rounded-lg transition-all backdrop-blur-md shadow-lg text-center transform active:scale-95 focus:outline-none">
+        <button onclick="showView('why-choose-us')" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 border-2 border-sky-400/60 hover:border-sky-300 text-slate-100 hover:text-sky-300 font-semibold px-6 py-3.5 rounded-lg transition-all backdrop-blur-sm shadow-lg text-center transform active:scale-95 focus:outline-none">
           Why Choose Us
         </button>
       </div>
@@ -112,7 +112,7 @@
         ← Back to Overview
       </button>
 
-      <div class="bg-slate-900/70 border border-sky-500/30 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+      <div class="bg-slate-900/60 border border-sky-500/30 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-2xl">
         <span class="text-sky-400 text-3xl mb-4 block">📡</span>
         <h2 class="text-3xl md:text-4xl font-extrabold text-slate-100 mb-6">We bring the future of mobile coverage to your device</h2>
         
@@ -139,7 +139,7 @@
         ← Back to Overview
       </button>
 
-      <div class="bg-slate-900/70 border border-sky-500/30 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+      <div class="bg-slate-900/60 border border-sky-500/30 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-2xl">
         <span class="text-sky-400 text-3xl mb-4 block">🔄</span>
         <h2 class="text-3xl md:text-4xl font-extrabold text-slate-100 mb-6">Keep Your Existing Plan</h2>
         
@@ -163,7 +163,7 @@
         ← Back to Overview
       </button>
 
-      <div class="bg-slate-900/70 border border-sky-500/40 backdrop-blur-md p-8 md:p-12 rounded-2xl shadow-2xl">
+      <div class="bg-slate-900/60 border border-sky-500/40 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-2xl">
         <span class="text-sky-400 text-3xl mb-4 block">⚡</span>
         <h2 class="text-3xl md:text-4xl font-extrabold text-slate-100 mb-6">Why Choose Us</h2>
         
@@ -197,7 +197,7 @@
         ← Back
       </button>
 
-      <div class="bg-slate-900/80 border-2 border-sky-400/60 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-2xl">
+      <div class="bg-slate-900/70 border-2 border-sky-400/60 backdrop-blur-sm p-10 md:p-16 rounded-3xl shadow-2xl">
         <span class="text-5xl mb-6 block animate-bounce">🎉</span>
         <h2 class="text-4xl md:text-6xl font-black text-slate-100 tracking-tight">
           Congrats, U R SO SMART!
@@ -211,7 +211,7 @@
         ← Back to Overview
       </button>
 
-      <div class="bg-slate-900/80 border-2 border-sky-400/60 backdrop-blur-md p-10 md:p-16 rounded-3xl shadow-2xl">
+      <div class="bg-slate-900/70 border-2 border-sky-400/60 backdrop-blur-sm p-10 md:p-16 rounded-3xl shadow-2xl">
         <span class="text-5xl mb-6 block animate-pulse">💪</span>
         <h2 class="text-4xl md:text-6xl font-black text-slate-100 tracking-tight">
           Now Do 10 Push-Ups!
@@ -236,7 +236,7 @@
     <button 
       id="music-toggle" 
       onclick="toggleMusic()" 
-      class="flex items-center gap-2 bg-slate-900/90 hover:bg-slate-800 border border-sky-500/40 text-slate-200 px-4 py-2.5 rounded-full backdrop-blur-md shadow-xl transition-all duration-300 text-xs font-semibold focus:outline-none group hover:scale-105"
+      class="flex items-center gap-2 bg-slate-900/90 hover:bg-slate-800 border border-sky-500/40 text-slate-200 px-4 py-2.5 rounded-full backdrop-blur-sm shadow-xl transition-all duration-300 text-xs font-semibold focus:outline-none group hover:scale-105"
       aria-label="Toggle ambient music"
     >
       <span id="music-icon" class="text-sky-400 text-base transition-transform group-hover:rotate-12">🎵</span>
