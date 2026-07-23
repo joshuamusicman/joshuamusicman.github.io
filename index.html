@@ -62,23 +62,14 @@
     <!-- ================= VIEW 1: HERO / HOME ================= -->
     <main id="view-hero" class="container mx-auto px-6 py-8 md:py-12 text-center max-w-4xl transition-all duration-300">
       
-      <!-- HERO PHOTO CARD (OPTION 1) -->
+      <!-- HERO PHOTO CARD (UNCROPPED) -->
       <div class="mb-10 max-w-2xl mx-auto group">
-        <div class="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl shadow-emerald-950/50 backdrop-blur-md">
+        <div class="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl shadow-emerald-950/50 backdrop-blur-md bg-stone-900/40 p-2">
           <img 
             src="hero-photo.jpg" 
             alt="Always Mobile Satellite Coverage" 
-            class="w-full h-64 md:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            class="w-full h-auto max-h-[500px] object-contain object-center rounded-xl group-hover:scale-[1.02] transition-transform duration-500"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
-        </div>
-
-        <!-- LEARN MORE BUTTON BELOW PHOTO -->
-        <div class="mt-4">
-          <button onclick="showView('what-we-do')" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-6 py-3 rounded-full transition-all shadow-lg shadow-amber-500/20 transform active:scale-95 focus:outline-none">
-            Learn More
-            <span class="text-lg">↓</span>
-          </button>
         </div>
       </div>
 
